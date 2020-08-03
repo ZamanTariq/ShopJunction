@@ -1,0 +1,21 @@
+[0504/015555.860:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0504/015556.101:ERROR:exception_snapshot_win.cc(98)] thread ID 11700 not found in process
+[0506/031423.015:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0506/031423.239:ERROR:exception_snapshot_win.cc(98)] thread ID 9308 not found in process
+[0506/031424.222:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0506/031424.222:ERROR:exception_snapshot_win.cc(98)] thread ID 10352 not found in process
+[0506/031424.449:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0506/031424.449:ERROR:exception_snapshot_win.cc(98)] thread ID 6164 not found in process
+[0506/031426.731:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0506/031426.732:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0506/031426.732:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0506/031426.732:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0514/153325.187:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[0520/013238.038:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0520/013238.062:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0520/013238.077:ERROR:exception_snapshot_win.cc(98)] thread ID 5164 not found in process
+[0520/013238.077:ERROR:exception_snapshot_win.cc(98)] thread ID 7332 not found in process
+[0520/013238.093:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0520/013238.093:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0520/013238.093:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0520/013238.111:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

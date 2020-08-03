@@ -1,0 +1,307 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<NODE_MODULES_FOLDER>/react-responsive-carousel/lib/styles/carousel.min.css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/path/to/material-icons/iconfont/material-icons.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!--Font-Awesome-->
+    <script src="https://kit.fontawesome.com/4e8dcea379.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/path/to/material-icons/iconfont/material-icons.css" />
+
+    <!-- JQUERY -->
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Google Font's  -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/bootstrap-select.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    
+
+    <title>Shop Inn</title>
+</head>
+
+<body>
+    <div class="over-flow" id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+
+<script>
+    (function() {
+        "use strict";
+        window.addEventListener(
+            "load",
+            function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName("needs-validation");
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener(
+                        "submit",
+                        function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add("was-validated");
+                        },
+                        false
+                    );
+                });
+            },
+            false
+        );
+    })();
+</script>
+
+<!-- <script>
+    $(window).load(function() {
+        $('#myModal').modal('show');
+    });
+</script> -->
+<script>
+    $(document).ready(function() {
+        $(".search").keyup(function() {
+            var searchTerm = $(".search").val();
+            var listItem = $(".results tbody").children("tr");
+            var searchSplit = searchTerm.replace(/ /g, "'):containsi('");
+
+            $.extend($.expr[":"], {
+                containsi: function(elem, i, match, array) {
+                    return (
+                        (elem.textContent || elem.innerText || "")
+                        .toLowerCase()
+                        .indexOf((match[3] || "").toLowerCase()) >= 0
+                    );
+                },
+            });
+
+            $(".results tbody tr")
+                .not(":containsi('" + searchSplit + "')")
+                .each(function(e) {
+                    $(this).attr("visible", "false");
+                });
+
+            $(".results tbody tr:containsi('" + searchSplit + "')").each(function(
+                e
+            ) {
+                $(this).attr("visible", "true");
+            });
+
+            var jobCount = $('.results tbody tr[visible="true"]').length;
+            $(".counter").text(jobCount + " item");
+
+            if (jobCount == "0") {
+                $(".no-result").show();
+            } else {
+                $(".no-result").hide();
+            }
+        });
+    });
+</script>
+
+<script>
+    // adapted from https://www.codeply.com/go/mhkMGnGgZo/bootstrap-4-validation-example
+
+    $("#bootstrapForm").submit(function(event) {
+        // make selected form variable
+        var vForm = $(this);
+
+        /*
+          If not valid prevent form submit
+          https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity
+          */
+        if (vForm[0].checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        } else {
+            // Replace alert with ajax submit here...
+            alert("your form is valid and ready to send");
+        }
+
+        // Add bootstrap 4 was-validated classes to trigger validation messages
+        vForm.addClass("was-validated");
+    });
+</script>
+
+<script>
+    $(".reveal").on("click", function() {
+        var $pwd = $(".pwd-show");
+        if ($pwd.attr("type") === "password") {
+            $pwd.attr("type", "text");
+        } else {
+            $pwd.attr("type", "password");
+        }
+    });
+</script>
+<!-- <script>
+    $(".toast").toast(option);
+</script> -->
+
+<!-- Social Media Button-->
+<script>
+    var shareUrl = "https://www.shopinn.pk";
+
+    var SocialShares = {
+        fb: {
+            share: "https://www.facebook.com/sharer/sharer.php?u=",
+        },
+        vk: {
+            share: "https://vk.com/share.php?url=",
+        },
+        tw: {
+            share: "https://twitter.com/intent/tweet?url=",
+        },
+        ln: {
+            share: "https://www.linkedin.com/cws/share?url=",
+        },
+        pt: {
+            // Have some trouble with this
+            share: "https://www.pinterest.com/pin/create/bookmarklet/?description=Vasiliy Lazarev&url=",
+        },
+    };
+
+    /**
+     * VK.com doesn't support callback parameter for JSONP
+     * VK.com wanna call VK.Share.count()
+     */
+    var VK = VK || {};
+    VK.Share = VK.Share || {};
+    VK.Share.count = function(index, count) {
+        console.log("vk", count);
+        SocialShares.vk.count = count;
+    };
+
+    $(function() {
+        $("[data-social]").each(function() {
+            var $this = $(this),
+                social = $this.data("social"),
+                oSocial;
+
+            if (SocialShares.hasOwnProperty(social)) {
+                oSocial = SocialShares[social];
+
+                if (oSocial.url) {
+                    $.getScript(
+                        oSocial.url +
+                        shareUrl +
+                        "&callback=SocialShares." +
+                        social +
+                        ".callback",
+                        function(data, textStatus, jqxhr) {
+                            $this.attr("data-count", oSocial.count);
+                        }
+                    );
+                }
+
+                if (oSocial.share) {
+                    $this.on("click", function() {
+                        window.open(
+                            oSocial.share + shareUrl,
+                            "",
+                            "menubar=no,toolbar=no,resizable=yes" +
+                            ",scrollbars=yes" +
+                            ",height=300,width=600"
+                        );
+                    });
+                }
+            }
+        });
+    });
+</script>
+<!-- OUR PARTNERS -->
+<script>
+    $(document).ready(function() {
+        $(".customer-logos").slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                },
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3,
+                },
+            }, ],
+        });
+    });
+</script>
+
+<!-- SCROLL TOP -->
+<script>
+    $(function() {
+        // Sidebar toggle behavior
+        $("#sidebarCollapse").on("click", function() {
+            $("#sidebar, #content").toggleClass("active");
+        });
+    });
+</script>
+
+
+
+</html>
